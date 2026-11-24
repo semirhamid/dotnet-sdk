@@ -57,7 +57,8 @@ namespace Microsoft.NetCore.Analyzers.Usage
                     context => AnalyzeCall(context, getAffectedParameters, expressionType),
                     OperationKind.Invocation,
                     OperationKind.ObjectCreation,
-                    OperationKind.PropertyReference);
+                    OperationKind.PropertyReference,
+                    OperationKind.RaiseEvent);
             });
         }
 
@@ -78,6 +79,7 @@ namespace Microsoft.NetCore.Analyzers.Usage
                 IInvocationOperation invocation => (invocation.TargetMethod, invocation.Arguments),
                 IObjectCreationOperation creation => (creation.Constructor, creation.Arguments),
                 IPropertyReferenceOperation reference => (reference.Property, reference.Arguments),
+                IRaiseEventOperation raise => ((raise.EventReference.Event.Type as INamedTypeSymbol)?.DelegateInvokeMethod, raise.Arguments),
                 _ => (null, ImmutableArray<IArgumentOperation>.Empty),
             };
 

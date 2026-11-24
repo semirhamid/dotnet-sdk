@@ -1867,13 +1867,17 @@ namespace Microsoft.NetCore.Analyzers.Usage.UnitTests
 
                 Class C
                     Event E As Attributed
+                    Event N(count As Integer)
 
                     Sub Test(a As Attributed, n As NotAttributed, count As Integer)
                         a([|1|])
                         a.Invoke([|1|])
                         a(count)
                         n(1)
-                        RaiseEvent E(1)
+                        RaiseEvent E([|1|])
+                        RaiseEvent E(count)
+                        RaiseEvent E(count:=1)
+                        RaiseEvent N(1)
                     End Sub
                 End Class
                 """);
