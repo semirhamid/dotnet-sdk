@@ -2698,6 +2698,26 @@ Enumerable.OfType&lt;T&gt; 使用的泛型类型检查(C# 'is' operator/IL 'isin
         <target state="translated">将字符串字面量替换为字符型文本</target>
         <note />
       </trans-unit>
+      <trans-unit id="RequireNamedArgumentsCodeFixTitle">
+        <source>Add argument name</source>
+        <target state="new">Add argument name</target>
+        <note />
+      </trans-unit>
+      <trans-unit id="RequireNamedArgumentsDescription">
+        <source>RequireNamedArgumentsAttribute marks parameters whose meaning is easy to confuse at the call site. Pass their arguments by name, or pass an expression that has the same name as the parameter.</source>
+        <target state="new">RequireNamedArgumentsAttribute marks parameters whose meaning is easy to confuse at the call site. Pass their arguments by name, or pass an expression that has the same name as the parameter.</target>
+        <note>{Locked="RequireNamedArgumentsAttribute"}</note>
+      </trans-unit>
+      <trans-unit id="RequireNamedArgumentsMessage">
+        <source>Use a named argument for parameter '{0}'</source>
+        <target state="new">Use a named argument for parameter '{0}'</target>
+        <note />
+      </trans-unit>
+      <trans-unit id="RequireNamedArgumentsTitle">
+        <source>Use named arguments where they are required</source>
+        <target state="new">Use named arguments where they are required</target>
+        <note />
+      </trans-unit>
       <trans-unit id="ReviewCodeForDllInjectionVulnerabilitiesMessage">
         <source>Potential DLL injection vulnerability was found where '{0}' in method '{1}' may be tainted by user-controlled data from '{2}' in method '{3}'.</source>
         <target state="translated">找到了潜在的 DLL 注入漏洞，其中方法“{1}”中的“{0}”可能会受到方法“{3}”中“{2}”的用户控制数据的污染。</target>

@@ -627,6 +627,25 @@
             ]
           }
         },
+        "CA2268": {
+          "id": "CA2268",
+          "shortDescription": "Use named arguments where they are required",
+          "fullDescription": "RequireNamedArgumentsAttribute marks parameters whose meaning is easy to confuse at the call site. Pass their arguments by name, or pass an expression that has the same name as the parameter.",
+          "defaultLevel": "note",
+          "helpUri": "https://learn.microsoft.com/dotnet/fundamentals/code-analysis/quality-rules/ca2268",
+          "properties": {
+            "category": "Usage",
+            "isEnabledByDefault": true,
+            "typeName": "CSharpRequireNamedArgumentsAnalyzer",
+            "languages": [
+              "C#"
+            ],
+            "tags": [
+              "Telemetry",
+              "EnabledRuleInAggressiveMode"
+            ]
+          }
+        },
         "CA2352": {
           "id": "CA2352",
           "shortDescription": "Unsafe DataSet or DataTable in serializable type can be vulnerable to remote code execution attacks",
@@ -7125,6 +7144,25 @@
             "category": "Usage",
             "isEnabledByDefault": true,
             "typeName": "BasicPreferGenericOverloadsAnalyzer",
+            "languages": [
+              "Visual Basic"
+            ],
+            "tags": [
+              "Telemetry",
+              "EnabledRuleInAggressiveMode"
+            ]
+          }
+        },
+        "CA2268": {
+          "id": "CA2268",
+          "shortDescription": "Use named arguments where they are required",
+          "fullDescription": "RequireNamedArgumentsAttribute marks parameters whose meaning is easy to confuse at the call site. Pass their arguments by name, or pass an expression that has the same name as the parameter.",
+          "defaultLevel": "note",
+          "helpUri": "https://learn.microsoft.com/dotnet/fundamentals/code-analysis/quality-rules/ca2268",
+          "properties": {
+            "category": "Usage",
+            "isEnabledByDefault": true,
+            "typeName": "BasicRequireNamedArgumentsAnalyzer",
             "languages": [
               "Visual Basic"
             ],

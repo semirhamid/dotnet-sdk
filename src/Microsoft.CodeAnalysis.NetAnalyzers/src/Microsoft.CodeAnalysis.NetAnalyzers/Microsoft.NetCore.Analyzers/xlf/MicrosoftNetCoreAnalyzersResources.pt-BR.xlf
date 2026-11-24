@@ -2698,6 +2698,26 @@ As ampliação e conversões definidas pelo usuário não são compatíveis com 
         <target state="translated">Substituir literal de cadeia de caracteres por literal char</target>
         <note />
       </trans-unit>
+      <trans-unit id="RequireNamedArgumentsCodeFixTitle">
+        <source>Add argument name</source>
+        <target state="new">Add argument name</target>
+        <note />
+      </trans-unit>
+      <trans-unit id="RequireNamedArgumentsDescription">
+        <source>RequireNamedArgumentsAttribute marks parameters whose meaning is easy to confuse at the call site. Pass their arguments by name, or pass an expression that has the same name as the parameter.</source>
+        <target state="new">RequireNamedArgumentsAttribute marks parameters whose meaning is easy to confuse at the call site. Pass their arguments by name, or pass an expression that has the same name as the parameter.</target>
+        <note>{Locked="RequireNamedArgumentsAttribute"}</note>
+      </trans-unit>
+      <trans-unit id="RequireNamedArgumentsMessage">
+        <source>Use a named argument for parameter '{0}'</source>
+        <target state="new">Use a named argument for parameter '{0}'</target>
+        <note />
+      </trans-unit>
+      <trans-unit id="RequireNamedArgumentsTitle">
+        <source>Use named arguments where they are required</source>
+        <target state="new">Use named arguments where they are required</target>
+        <note />
+      </trans-unit>
       <trans-unit id="ReviewCodeForDllInjectionVulnerabilitiesMessage">
         <source>Potential DLL injection vulnerability was found where '{0}' in method '{1}' may be tainted by user-controlled data from '{2}' in method '{3}'.</source>
         <target state="translated">Foi encontrada uma possível vulnerabilidade de injeção de DLL, em que o '{0}' no método '{1}' pode ter sido afetado pelos dados controlados pelo usuário de '{2}' no método '{3}'.</target>

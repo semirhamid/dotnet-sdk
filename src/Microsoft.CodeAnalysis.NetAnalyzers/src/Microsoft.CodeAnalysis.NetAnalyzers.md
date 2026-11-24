@@ -2850,6 +2850,18 @@ Before quoting was supported, whitespace in a file-based program '#:' directive 
 |CodeFix|True|
 ---
 
+## [CA2268](https://learn.microsoft.com/dotnet/fundamentals/code-analysis/quality-rules/ca2268): Use named arguments where they are required
+
+RequireNamedArgumentsAttribute marks parameters whose meaning is easy to confuse at the call site. Pass their arguments by name, or pass an expression that has the same name as the parameter.
+
+|Item|Value|
+|-|-|
+|Category|Usage|
+|Enabled|True|
+|Severity|Info|
+|CodeFix|True|
+---
+
 ## [CA2300](https://learn.microsoft.com/dotnet/fundamentals/code-analysis/quality-rules/ca2300): Do not use insecure deserializer BinaryFormatter
 
 The method '{0}' is insecure when deserializing untrusted data.  If you need to instead detect BinaryFormatter deserialization without a SerializationBinder set, then disable rule CA2300, and enable rules CA2301 and CA2302.

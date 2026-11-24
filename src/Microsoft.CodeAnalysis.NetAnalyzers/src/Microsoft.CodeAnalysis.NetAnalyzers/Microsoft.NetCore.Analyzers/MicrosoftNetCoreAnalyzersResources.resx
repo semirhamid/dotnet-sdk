@@ -2352,4 +2352,17 @@ Widening and user defined conversions are not supported with generic types.</val
     <value>Use ReadOnlySpan&lt;T&gt; property</value>
     <comment>{Locked="ReadOnlySpan&lt;T&gt;"}</comment>
   </data>
+  <data name="RequireNamedArgumentsTitle" xml:space="preserve">
+    <value>Use named arguments where they are required</value>
+  </data>
+  <data name="RequireNamedArgumentsMessage" xml:space="preserve">
+    <value>Use a named argument for parameter '{0}'</value>
+  </data>
+  <data name="RequireNamedArgumentsDescription" xml:space="preserve">
+    <value>RequireNamedArgumentsAttribute marks parameters whose meaning is easy to confuse at the call site. Pass their arguments by name, or pass an expression that has the same name as the parameter.</value>
+    <comment>{Locked="RequireNamedArgumentsAttribute"}</comment>
+  </data>
+  <data name="RequireNamedArgumentsCodeFixTitle" xml:space="preserve">
+    <value>Add argument name</value>
+  </data>
 </root>
